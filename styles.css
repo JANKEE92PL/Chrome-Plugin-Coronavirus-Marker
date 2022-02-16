@@ -1,11 +1,11 @@
+.highlight {
+    background: indianred !important;
+    color: white !important;
+}
 .rainbow {
     animation: rainbow 600ms !important;
     animation-iteration-count: infinite !important;
     background-color: #1EDD88 !important;
-}
-.highlight {
-    background: indianred !important;
-    color: white !important;
 }
 @keyframes rainbow {
     0% {
