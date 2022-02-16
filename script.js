@@ -4,6 +4,7 @@ const tagsToIgnore = ['SCRIPT', 'NOSCRIPT', 'STYLE', 'SOURCE']
 replaceText(document.body)
 
 function replaceText(element) {
+    if (tagsToIgnore.includes(element.nodeName)) { return }
     if (element.hasChildNodes()) {
         element.childNodes.forEach(replaceText)
     } else if (element.nodeType === Text.TEXT_NODE) {
